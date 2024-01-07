@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/users.css">
+</head>
+<body>
+<header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <table id="userTable">
+        <tr>
+          <td>User ID</td>
+          <td>Username</td>
+          <td>User email</td>
+            <th>Action</th>
+
+        </tr>
+    </table>
+
+    <div class="findBtn">
+        <button id="findBtn">Find</button>
+        <div class="subButtons hidden">
+            <button id="findByUserIdBtn">By ID</button>
+            <button id="findByUsernameBtn">By Username</button>
+
+        </div>
+    </div>
+
+    <form id="updateUserForm" class="hidden">
+        <input type="hidden" id="userId" name="userId">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password">
+
+
+        <button type="submit">Update User</button>
+    </form>
+
+    <!-- <button id="viewUserTasksBtn">View Your Tasks</button>
+
+    <div id="userTasksSection" class="hidden">
+        <h2>Your Tasks</h2>
+        <ul id="userTasksList">
+            Task list will be displayed here
+        </ul>
+    </div>-->
+
+
+
+</main>
+<script src="js/users.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
+
+
+

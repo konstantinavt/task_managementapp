@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Task Management App</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<section class="section-with-background">
+<header>
+    <div class="logo">
+
+        <h1>Welcome to Task Management App</h1>
+        <button id="logoutBtn" class="hidden">Logout</button>
+    </div>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="projects.html">Projects</a></li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+    <div class="buttons">
+        <button id="createUserBtn">Create User</button>
+        <div class="userCreationForm hidden">
+            <form id="userForm">
+                <input type="text" id="usernameInput" placeholder="Enter Username">
+                <input type="email" id="emailInput" placeholder="Enter Email">
+                <input type="password" id="passwordInput" placeholder="Enter Password">
+                <button type="submit" id="submitUserBtn">Submit</button>
+            </form>
+        </div>
+        <button id="createTaskBtn">Create Task</button>
+        <div class="taskCreationForm hidden">
+            <form id="taskForm">
+                <!-- Task input fields -->
+                <input type="text" id="taskTitleInput" placeholder="Enter Task Title">
+                <input type="text" id="taskDescriptionInput" placeholder="Enter Task Description">
+                <input type="text" id="taskStatusInput" placeholder="Enter Task Status">
+                <input type="date" id="taskDueDateInput" placeholder="Enter Task Due Date">
+                <input type="text" id="taskProjectIdInput" placeholder="Enter Task Project Id">
+                <button type="submit" id="submitTaskBtn">Create Task</button>
+            </form>
+        </div>
+        <button id="createProjectBtn">Create Project</button>
+        <div class="projectCreationForm hidden">
+            <form id="projectForm">
+
+                <input type="text" id="projectNameInput" placeholder="Enter Project Name">
+                <input type="text" id="projectDescriptionInput" placeholder="Enter Project Description">
+                <button type="submit" id="submitProjectBtn">Create Project</button>
+            </form>
+        </div>
+
+        <div class="viewBtn">
+            <button id="viewBtn">View</button>
+            <div class="subButtons hidden">
+                <a href="users.html" target="_blank">
+                    <button id="viewUsersBtn">Users</button>
+                </a>
+                <a href="tasks.html" target="_blank">
+                    <button id="viewTasksBtn">Tasks</button>
+                </a>
+                <a href="projects.html" target="_blank">
+                    <button id="viewProjectsBtn">Projects</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <form id="loginForm">
+            <input type="email" id="userEmailInput" placeholder="Email" required>
+            <input type="password" id="userPasswordInput" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+
+    <button id="viewUserTasksBtn" class="hidden">View Your Tasks</button>
+        <div id="userTasksSection" class="hidden">
+           <h2>Your Tasks</h2>
+           <ul id="userTasksList">
+            Task list will be displayed here
+           </ul>
+
+        </div>
+
+    <form id="assignTaskForm" class="hidden">
+        <input type="text" id="assignedUserIdInput" placeholder="User ID" required>
+        <input type="text" id="assignedTaskIdInput" placeholder="Task ID" required>
+
+        <button type="submit">Assign Task</button>
+    </form>
+
+
+
+
+</main>
+
+<footer>
+
+</footer>
+</section>
+<script src="js/index.js" type="module"></script>
+<script src="js/tasks.js" type="module"></script>
+<script src="js/users.js" type="module"></script>
+<script src="js/projects.js" type="module"></script>
+</body>
+
+
+</html>

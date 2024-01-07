@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+<header>
+    <h1>Projects</h1>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <div class="findBtn">
+        <button id="findBtn">Find</button>
+        <div class="subButtons hidden">
+            <button id="findByProjectIdBtn">By Project ID</button>
+            <button id="findByProjectNameBtn">By Project Name</button>
+        </div>
+    </div>
+    <table id="projectTable">
+        <thead>
+        <tr>
+            <th>Project ID</th>
+            <th>Project Name</th>
+            <th>Project Description</th>
+            <th>Project Task Titles</th>
+            <th>Action</th>
+
+        </tr>
+        </thead>
+        <tbody id="projectTableBody">
+
+        </tbody>
+    </table>
+
+    <form id="updateProjectForm" class="hidden">
+        <input type="hidden" id="projectId" name="projectId">
+        <label for="projectName">Name:</label>
+        <input type="text" id="projectName" name="projectName">
+
+        <label for="projectDescription">Description:</label>
+        <input type="text" id="projectDescription" name="projectDescription">
+
+        <label for="projectTaskTitles">Task Titles:</label>
+        <input type="text" id="projectTaskTitles" name="projectTaskTitles">
+
+        <button type="submit">Update Project</button>
+    </form>
+
+
+</main>
+<footer>
+
+</footer>
+<script src="js/projects.js"></script>
+</body>
+</html>
